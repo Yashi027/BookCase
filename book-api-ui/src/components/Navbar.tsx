@@ -25,7 +25,7 @@ const Navbar = () => {
                         📚
                     </span>
                     <span>
-                        Book<span className="text-amber-300">case</span>
+                        Book<span className="text-amber-300">Case</span>
                     </span>
                 </Link>
 
@@ -43,7 +43,6 @@ const Navbar = () => {
                     </NavLink>
                 </div>
 
-                {/* Mobile menu button */}
                 <button
                     type="button"
                     onClick={() => setMenuOpen((prev) => !prev)}
@@ -56,7 +55,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile navigation */}
             {menuOpen && (
                 <div
                     id="mobile-navigation"

@@ -111,7 +111,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public String deleteBook(String isbn) throws IOException {
         Book book = bookRepository.findById(isbn).orElseThrow(() -> new RuntimeException("Book not found"));
-        Files.deleteIfExists(Paths.get(path + File.separator + book.getBookCover()));
+        //Files.deleteIfExists(Paths.get(path + File.separator + book.getBookCover()));
         bookRepository.delete(book);
         return "Book deleted successfully with ISBN: {isbn}";
     }

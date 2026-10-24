@@ -167,7 +167,7 @@ const AddBook = () => {
     return (
         <main className="min-h-screen bg-[#f5f7f2] px-4 py-10 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-5xl">
-                {/* Page heading */}
+  
                 <div className="mb-8">
                     <div className="mb-3 flex items-center gap-2 text-sm text-gray-500">
                         <Link to="/" className="hover:text-emerald-800">
@@ -193,7 +193,6 @@ const AddBook = () => {
                     </p>
                 </div>
 
-                {/* Form card */}
                 <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
                     <div className="h-1.5 bg-emerald-900" />
 
@@ -221,7 +220,6 @@ const AddBook = () => {
                         )}
 
                         <form onSubmit={handleSubmit} className="space-y-8">
-                            {/* Book information */}
                             <section>
                                 <div className="mb-5 flex items-center gap-3">
                                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-xl">
@@ -240,7 +238,7 @@ const AddBook = () => {
                                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                                     <div>
                                         <label htmlFor="isbn" className={labelClass}>
-                                            ISBN *
+                                            ISBN 
                                         </label>
                                         <input
                                             id="isbn"
@@ -255,7 +253,7 @@ const AddBook = () => {
 
                                     <div>
                                         <label htmlFor="title" className={labelClass}>
-                                            Book Title *
+                                            Book Title 
                                         </label>
                                         <input
                                             id="title"
@@ -270,7 +268,7 @@ const AddBook = () => {
 
                                     <div>
                                         <label htmlFor="author" className={labelClass}>
-                                            Author *
+                                            Author 
                                         </label>
                                         <input
                                             id="author"
@@ -285,7 +283,7 @@ const AddBook = () => {
 
                                     <div>
                                         <label htmlFor="category" className={labelClass}>
-                                            Category *
+                                            Category 
                                         </label>
                                         <select
                                             id="category"
@@ -314,7 +312,6 @@ const AddBook = () => {
 
                             <div className="border-t border-gray-100" />
 
-                            {/* Price and quantity */}
                             <section>
                                 <div className="mb-5 flex items-center gap-3">
                                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-xl">
@@ -369,7 +366,6 @@ const AddBook = () => {
 
                             <div className="border-t border-gray-100" />
 
-                            {/* Cover image */}
                             <section>
                                 <div className="mb-5 flex items-center gap-3">
                                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-xl">
@@ -452,7 +448,6 @@ const AddBook = () => {
                                 </div>
                             </section>
 
-                            {/* Form actions */}
                             <div className="flex flex-col-reverse gap-3 border-t border-gray-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
                                 <button
                                     type="button"
