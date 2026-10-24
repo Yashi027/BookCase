@@ -12,4 +12,4 @@ project:
   images: images/
 
 base:
-  url: ${BASE_URL}
+  url: ${BASE_URL:http://localhost:8080}
